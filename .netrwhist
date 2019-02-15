@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/lincoln/.vim/pack/git-plugins'
+let g:netrw_dirhist_2='/Users/lincoln/.vim/pack/git-plugins/start'
+let g:netrw_dirhist_3='/Users/lincoln/.vim/pack/git-plugins/start/ale'
+let g:netrw_dirhist_4='/Users/lincoln/.vim/pack/git-plugins/start/ale/ale_linters'
+let g:netrw_dirhist_5='/Users/lincoln/.vim/pack/git-plugins/start/ale/ale_linters/python'
+let g:netrw_dirhist_6='/Users/lincoln/workspace/bill-back'
