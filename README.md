@@ -1,7 +1,7 @@
 vim
----
+===
 
-Clone the repo using `--recurse-submodules`.
+Clone and pull the repo using `--recurse-submodules` to get all packages.
 
 Replace (or merge) your ~/.vim folder with the contents of this repository.
 
@@ -13,7 +13,9 @@ Put the following line in ~/.vimrc:
 package management with vim 8
 -----------------------------
 
-# Adding a package
+Copied from https://shapeshed.com/vim-packages/
+
+### adding a package ###
 
 Here is an example of how to add a package using Vim’s native approach to packages and git submodules.
 
@@ -23,14 +25,14 @@ Here is an example of how to add a package using Vim’s native approach to pack
     git add .gitmodules vim/pack/shapeshed/start/vim-airline
     git commit
 
-# Updating packages
+### updating packages ###
 
 To update packages is also just a case of updating git submodules.
 
     git submodule update --remote --merge
     git commit
 
-# Removing a package
+### removing a package ###
 
 Removing a package is just a case of removing the git submodule.
 
