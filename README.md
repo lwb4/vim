@@ -3,6 +3,10 @@ vim
 
 Clone and pull the repo using `--recurse-submodules` to get all packages.
 
+If you have cloned the repo with recurse-submodules, use this command:
+
+    git submodule update --init --recursive
+
 Replace (or merge) your ~/.vim folder with the contents of this repository.
 
 Put the following line in ~/.vimrc:
