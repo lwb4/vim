@@ -9,6 +9,8 @@ set clipboard=unnamed
 set backspace=indent,eol,start
 set hlsearch
 set linebreak
+set history=200
+set wildmode=longest,list
 
 au BufNewFile,BufRead *.yaml,*.yml,*.eyaml so ~/.vim/yaml.vim
 
@@ -35,6 +37,16 @@ set wildignore+=*.pdf,*.psd
 set wildignore+=node_modules/*,bower_components/*
 set wildignore+=*.pyc
 
+inoremap jk <Esc>
+map jg :nohl<CR>
+map js :%s//<C-r><C-w>/g<CR>
+map jz :w \| !./%<CR>
+map jp :w \| !python3 %<CR>
+command WQ wq
+command Wq wq
+command W w
+command Q q
+command Qa qa
 
 function Char80()
   highlight OverLength ctermbg=red ctermfg=white guibg=#592929
