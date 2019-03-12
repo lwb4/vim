@@ -38,10 +38,13 @@ set wildignore+=node_modules/*,bower_components/*
 set wildignore+=*.pyc
 
 inoremap jk <Esc>
-map jg :nohl<CR>
-map js :%s//<C-r><C-w>/g<CR>
-map jz :w \| !./%<CR>
-map jp :w \| !python3 %<CR>
+let mapleader = ' '
+nnoremap <leader>g :nohl<CR>
+nnoremap <leader>s :%s//<C-r><C-w>/g<CR>
+nnoremap <leader>z :w \| !./%<CR>
+nnoremap <leader>p :w \| !python3 %<CR>
+nnoremap <leader>w :w \| tabnew \| read !webpack<CR>
+nnoremap <leader>0 :q!<CR>
 command WQ wq
 command Wq wq
 command W w
