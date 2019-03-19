@@ -45,6 +45,10 @@ nnoremap <leader>z :w \| !./%<CR>
 nnoremap <leader>p :w \| !python3 %<CR>
 nnoremap <leader>w :w \| tabnew \| read !webpack<CR>
 nnoremap <leader>0 :q!<CR>
+nnoremap <silent> [b :bprevious
+nnoremap <silent> ]b :bnext
+nnoremap <silent> [B :bfirst
+nnoremap <silent> ]B :blast
 command WQ wq
 command Wq wq
 command W w
@@ -58,6 +62,7 @@ endfunction
 command Char80 call Char80()
 
 let g:ale_enabled = 0
+let g:ycm_python_binary_path = '/usr/local/bin/python'
 
 " Load all plugins now.
 " Plugins need to be added to runtimepath before helptags can be generated.
