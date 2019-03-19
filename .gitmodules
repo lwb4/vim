@@ -13,9 +13,6 @@
 [submodule "pack/foo/start/commentary"]
 	path = pack/foo/start/commentary
 	url = https://tpope.io/vim/commentary.git
-[submodule "pack/foo/start/tsuquyomi"]
-	path = pack/foo/start/tsuquyomi
-	url = https://github.com/Quramy/tsuquyomi.git
 [submodule "pack/foo/start/YouCompleteMe"]
 	path = pack/foo/start/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
