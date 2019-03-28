@@ -16,3 +16,6 @@
 [submodule "pack/foo/start/YouCompleteMe"]
 	path = pack/foo/start/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "pack/foo/start/setcolors"]
+	path = pack/foo/start/setcolors
+	url = https://github.com/felixhummel/setcolors.vim.git
