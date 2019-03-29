@@ -48,10 +48,6 @@ nnoremap <leader>p :w \| !python3 %<CR>
 nnoremap <leader>w :w \| tabnew \| read !webpack<CR>
 nnoremap <leader>0 :q!<CR>
 nnoremap <leader>d :YcmCompleter GoTo<CR>
-nnoremap <silent> [b :bprevious<CR>
-nnoremap <silent> ]b :bnext<CR>
-nnoremap <silent> [B :bfirst<CR>
-nnoremap <silent> ]B :blast<CR>
 command WQ wq
 command Wq wq
 command W w
