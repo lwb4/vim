@@ -13,6 +13,7 @@ set hlsearch
 set linebreak
 set history=200
 set wildmode=longest,list
+set rtp+=/usr/local/opt/fzf
 
 au BufNewFile,BufRead *.yaml,*.yml,*.eyaml so ~/.vim/yaml.vim
 
@@ -48,6 +49,7 @@ nnoremap <leader>p :w \| !python3 %<CR>
 nnoremap <leader>w :w \| tabnew \| read !webpack<CR>
 nnoremap <leader>0 :q!<CR>
 nnoremap <leader>d :YcmCompleter GoTo<CR>
+nnoremap <leader>fzf :FZF<CR>
 command WQ wq
 command Wq wq
 command W w
