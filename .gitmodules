@@ -19,3 +19,6 @@
 [submodule "pack/foo/start/setcolors"]
 	path = pack/foo/start/setcolors
 	url = https://github.com/felixhummel/setcolors.vim.git
+[submodule "pack/foo/start/unimpaired"]
+	path = pack/foo/start/unimpaired
+	url = https://tpope.io/vim/unimpaired.git
