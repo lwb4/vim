@@ -1,0 +1,72 @@
+Vim things to memorize
+
+:[sp]lit {filename} == same as <C-w>s :edit {filename}
+:[vsp]lit {filename} == same as <C-w>v :edit {filename}
+<C-w>w or <C-w><C-w>== cycle between open windows
+<C-w>c or :close == Close the active window
+:only == same as <C-w>o
+<C-w>_ == maximize height of active window
+<C-w>| == maximize width of active window
+[n]<C-w>_ == set height of active window to n rows (or use the mouse)
+[n]<C-w>| == set width of active window to n cols (or use the mouse)
+:lcd {path} == if path is blank, list current directory. else, set current directory
+<C-w>T == move current window to a new tab page
+:tabonly == close all tabs but this one
+:tabclose == close this tab with all its open windows
+:tabmove [N] == if N is 0, move current tab page to beginning. else, move current tab page to end
+
+:args {arglist} == set the arglist to {arglist}, which can be space separated list or glob(s)
+** == like * but can recurse downward into directories
+`shell code` == executes `shell code` in the shell
+:bnext! == still preserves unsaved changes
+:set hidden == execute argdo commands without having to save the buffer
+
+[m == prev function for Java or similar
+]m == next function for Java or similar
+
+gi == go back to the last place you inserted text
+g; g, == go through the changelist of positions
+
+<C-w> delete back one word in insert mode
+<C-u> delete back to start of line in insert mode
+<C-o> switch to insert normal mode
+<C-r>{register} paste contents of register in insert mode
+<C-r>= evaluate expression and paste into buffer
+
+ga == character code for char under cursor
+<C-k>{char1}{char2} == place tab by digraph (12 -> ½, etc) :h digraph-table
+
+R == replace mode (tabs replace one char)
+gR == virtual replace mode (tabs replace more than one char)
+
+:[range]d[x] == delete range into register x
+:[range]y[x] == yank " " "
+:[line]put[x] == put contents of register x after line
+:[range]t{address} == copy range to address
+:[range]m{address} == move range to address
+:[range]j == join range
+:[range]normal{commands} == execute normal mode commands on range
+:[range]s/{pattern}/{string}/[flags] == replace occurences of pattern with string on range (with flags)
+:[range]g/{pattern}/[cmd] == execute ex command on range where pattern matches (range optional)
+@: == repeat last ex command
+
+gUU == capitalize whole line
+
+r == read file into buffer (works with !<command> too)
+:[range]!<command> == run shell command on the active buffer
+
+y/search == yank text until first occurrence of search term
+y?search
+d/search == delete text until first occurrence of search term
+d?search
+c/search == change text until first occurrence of search term
+c?search
+
+:update == like write, but only when the file has been updated
+
+:r ls == pipe ls stdout into buffer
+:[range]w sh == pipe buffer (with optional range) into sh stdin
+!{motion} == enter command-line mode and prepopulate [range] with the lines covered by {motion]
+
+:argdo {something} == executes {something} on all files in the arg list
+:bufdo {something} == like above, but for buffers

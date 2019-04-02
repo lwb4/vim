@@ -49,7 +49,7 @@ nnoremap <leader>p :w \| !python3 %<CR>
 nnoremap <leader>w :w \| tabnew \| read !webpack<CR>
 nnoremap <leader>0 :q!<CR>
 nnoremap <leader>d :YcmCompleter GoTo<CR>
-nnoremap <leader>fzf :FZF<CR>
+nnoremap <leader>f :FZF<CR>
 command WQ wq
 command Wq wq
 command W w
