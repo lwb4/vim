@@ -45,6 +45,7 @@ let mapleader = ' '
 nnoremap <leader>g :nohl<CR>
 nnoremap <leader>s :%s//<C-r><C-w>/g<CR>
 nnoremap <leader>z :w \| !./%<CR>
+nnoremap <leader>b <C-^>
 nnoremap <leader>p :w \| !python3 %<CR>
 nnoremap <leader>w :w \| tabnew \| read !webpack<CR>
 nnoremap <leader>0 :q!<CR>
