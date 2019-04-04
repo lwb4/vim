@@ -55,6 +55,7 @@ command Wq wq
 command W w
 command Q q
 command Qa qa
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 function Char80()
   highlight OverLength ctermbg=red ctermfg=white guibg=#592929
@@ -62,7 +63,7 @@ function Char80()
 endfunction
 command Char80 call Char80()
 
-let g:ale_enabled = 0
+let g:ale_enabled = 1
 let g:ycm_python_binary_path = '/usr/local/bin/python'
 
 " Load all plugins now.

@@ -1,5 +1,11 @@
 Vim things to memorize
 
+:e %:h<Tab> == :e /directory/of/current/file
+:%% == expand directory of current file
+
+:copen == open the quickfix window
+:vimgrep /{pattern}/g {files} == searches for vim pattern in files
+
 :[sp]lit {filename} == same as <C-w>s :edit {filename}
 :[vsp]lit {filename} == same as <C-w>v :edit {filename}
 <C-w>w or <C-w><C-w>== cycle between open windows
@@ -10,6 +16,7 @@ Vim things to memorize
 [n]<C-w>_ == set height of active window to n rows (or use the mouse)
 [n]<C-w>| == set width of active window to n cols (or use the mouse)
 :lcd {path} == if path is blank, list current directory. else, set current directory
+:pwd == print working directory
 <C-w>T == move current window to a new tab page
 :tabonly == close all tabs but this one
 :tabclose == close this tab with all its open windows
