@@ -66,6 +66,7 @@ command Char80 call Char80()
 
 let g:ale_enabled = 1
 let g:ycm_python_binary_path = '/usr/local/bin/python'
+let g:ycm_min_num_of_chars_for_completion = 99
 
 " Load all plugins now.
 " Plugins need to be added to runtimepath before helptags can be generated.
@@ -73,3 +74,5 @@ packloadall
 " Load all of the helptags now, after plugins have been loaded.
 " All messages and errors will be ignored.
 silent! helptags ALL
+
+runtime macros/matchit.vim
