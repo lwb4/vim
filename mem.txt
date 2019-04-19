@@ -1,9 +1,39 @@
 Vim things to memorize
 
-:( == previous sentence
-:) == next sentence
-:{ == previous paragraph
-:} == next paragraph
+:set ignorecase == search case insensitive (side effect on autocompletion)
+/\c{term} == search for {term} case insensitive. \c can be used anywhere in the pattern.
+/\C{term} == search for {term} case sensitive. \C can be used anywhere in the pattern.
+:set smartcase == search case sensitive only when an uppercase letter is included in the search term
+/\{}, /\(\), /[] == in curly braces, only the first needs to be escaped. parens, both need escape. square brackets have special meaning by default.
+\v == set search pattern to very magic
+\x == hex character class, aka [0-9a-fA-F] (:help /character-classes)
+\V == verbatim literal search (verynomagic). Everything but (?|/), \, depending on search delimiter
+:%s//{text}/g == replace the last search term with {text}
+/\<, /\> == matches beginning and ending of word
+/\1 == matches the first subgroup in a regex (same for \2...\9. \0 matches whole regex)
+/\v%({subterm}){term} == don't assign {subterm} to \1
+g*, g# == same as * and #, but without word boundaries
+/\zs, /\ze == mark the start and end of a search term
+
+:wnext == write, go to next
+:argo normal @a == run macro a in parallel on all files in the arg list
+
+qA == append keystrokes to existing macro in register a
+:{range}normal @a == run a macro "in parallel" on range
+
+:reg {x} == show contents of register x (all if blank)
+"0 == yank register (not clobbered by delete or change commands)
+"= == use the expression register to evaluate an expression
+"% == register with name of the current file
+"# == register with name of the alternate file
+". == register with the last inserted text
+": == register with the last Ex command
+"/ == register with the last search pattern
+
+( == previous sentence
+) == next sentence
+{ == previous paragraph
+} == next paragraph
 
 :gf == go to file under cursor
 :set suffixesadd+=.py == Vim will attempt to add .py to a file if it can't find it
@@ -87,9 +117,11 @@ cities = %{ London, New York }
 [m == prev function for Java or similar
 ]m == next function for Java or similar
 
+gp == p, but leave the cursor at the end of the pasted text
+gP == P, but leave the cursor at the end of the pasted text
+
 <C-u> delete back to start of line in insert mode
 <C-r>{register} paste contents of register in insert mode
-<C-r>= evaluate expression and paste into buffer
 
 ga == character code for char under cursor
 <C-k>{char1}{char2} == place tab by digraph (12 -> ½, etc) :h digraph-table

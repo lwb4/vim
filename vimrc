@@ -14,6 +14,7 @@ set linebreak
 set history=200
 set wildmode=longest,list
 set rtp+=/usr/local/opt/fzf
+set smartcase
 
 au BufNewFile,BufRead *.yaml,*.yml,*.eyaml so ~/.vim/yaml.vim
 
@@ -64,7 +65,7 @@ function Char80()
 endfunction
 command Char80 call Char80()
 
-let g:ale_enabled = 1
+let g:ale_enabled = 0
 let g:ycm_python_binary_path = '/usr/local/bin/python'
 let g:ycm_min_num_of_chars_for_completion = 99
 
