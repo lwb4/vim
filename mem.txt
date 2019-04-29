@@ -1,5 +1,13 @@
 Vim things to memorize
 
+/{match}/e == jump to the end of a match
+//e == amend current search to jump to end of match
+
+:set nowrapscan == don't wrap around when searching
+/<CR>, ?<CR> == jump to next/previous match of pattern
+:gn, gN == jump to next/previous match and select with character-wise Visual mode
+/{abc}<C-r><C-w> == autocompletes the search field using the remainder of the current preview match
+
 :set ignorecase == search case insensitive (side effect on autocompletion)
 /\c{term} == search for {term} case insensitive. \c can be used anywhere in the pattern.
 /\C{term} == search for {term} case sensitive. \C can be used anywhere in the pattern.

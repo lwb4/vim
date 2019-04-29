@@ -12,9 +12,10 @@ set backspace=indent,eol,start
 set hlsearch
 set linebreak
 set history=200
-set wildmode=longest,list
 set rtp+=/usr/local/opt/fzf
 set smartcase
+set ignorecase
+set incsearch
 
 au BufNewFile,BufRead *.yaml,*.yml,*.eyaml so ~/.vim/yaml.vim
 
