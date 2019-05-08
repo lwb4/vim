@@ -116,6 +116,12 @@ cities = %{ London, New York }
 :tabclose == close this tab with all its open windows
 :tabmove [N] == if N is 0, move current tab page to beginning. else, move current tab page to end
 
+rearranging windows:
+<C-w>r
+<C-w>R
+<C-w>x
+<C-w>[HJKL]
+
 :args {arglist} == set the arglist to {arglist}, which can be space separated list or glob(s)
 ** == like * but can recurse downward into directories
 `shell code` == executes `shell code` in the shell
