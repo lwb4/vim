@@ -1,5 +1,9 @@
 Vim things to memorize
 
+:%s///gn == count the number of matches for this search term
+gn == operate on the next match, for example:
+gUgn == convert the next match to uppercase (dot repeatable)
+
 /{match}/e == jump to the end of a match
 //e == amend current search to jump to end of match
 
