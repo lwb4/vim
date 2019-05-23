@@ -1,4 +1,4 @@
-colorscheme gruvbox
+colorscheme desert
 
 syntax on
 filetype plugin indent on
