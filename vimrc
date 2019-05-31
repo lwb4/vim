@@ -17,6 +17,16 @@ set smartcase
 set ignorecase
 set incsearch
 
+set foldmethod=syntax "syntax highlighting items specify folds
+set foldcolumn=1 "defines 1 col at window left, to indicate folding
+let javaScript_fold=1 "activate folding by JS syntax
+set foldlevelstart=99 "start file with all folds opened
+augroup AutoSaveFolds
+  autocmd!
+  autocmd BufWinLeave * mkview
+  autocmd BufWinEnter * silent loadview
+augroup END
+
 au BufNewFile,BufRead *.yaml,*.yml,*.eyaml so ~/.vim/yaml.vim
 
 nnoremap <Leader>H :call<SID>LongLineHLToggle()<cr>
