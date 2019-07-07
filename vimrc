@@ -1,5 +1,3 @@
-colorscheme gruvbox
-
 syntax on
 filetype plugin indent on
 set tabstop=4
@@ -21,11 +19,6 @@ set foldmethod=syntax "syntax highlighting items specify folds
 set foldcolumn=1 "defines 1 col at window left, to indicate folding
 let javaScript_fold=1 "activate folding by JS syntax
 set foldlevelstart=99 "start file with all folds opened
-augroup AutoSaveFolds
-  autocmd!
-  autocmd BufWinLeave * mkview
-  autocmd BufWinEnter * silent loadview
-augroup END
 
 au BufNewFile,BufRead *.yaml,*.yml,*.eyaml so ~/.vim/yaml.vim
 
@@ -59,7 +52,7 @@ nnoremap <leader>s :%s//<C-r><C-w>/g<CR>
 nnoremap <leader>z :w \| !./%<CR>
 nnoremap <leader>b <C-^>
 nnoremap <leader>p :w \| !python3 %<CR>
-nnoremap <leader>w :w \| tabnew \| read !webpack<CR>
+nnoremap <leader>w <C-w>v<C-w>w
 nnoremap <leader>0 :q!<CR>
 nnoremap <leader>d :YcmCompleter GoTo<CR>
 nnoremap <leader>f :FZF<CR>
