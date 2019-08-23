@@ -5,12 +5,13 @@ set shiftwidth=4
 set expandtab
 set number
 set relativenumber
-set clipboard=unnamed
+set clipboard=unnamedplus
 set backspace=indent,eol,start
 set hlsearch
 set linebreak
 set history=200
 set rtp+=/usr/local/opt/fzf
+set rtp+=~/.fzf
 set smartcase
 set ignorecase
 set incsearch
@@ -45,17 +46,24 @@ set wildignore+=*.pdf,*.psd
 set wildignore+=node_modules/*,bower_components/*
 set wildignore+=*.pyc
 
+inoremap JK <Esc>
+inoremap KJ <Esc>
 inoremap jk <Esc>
+inoremap kj <Esc>
 let mapleader = ' '
 nnoremap <leader>g :nohl<CR>
 nnoremap <leader>s :%s//<C-r><C-w>/g<CR>
 nnoremap <leader>z :w \| !./%<CR>
 nnoremap <leader>b <C-^>
-nnoremap <leader>p :w \| !python3 %<CR>
+nnoremap <leader>p :w \| !prettier --write %<CR>
 nnoremap <leader>w <C-w>v<C-w>w
 nnoremap <leader>0 :q!<CR>
 nnoremap <leader>d :YcmCompleter GoTo<CR>
 nnoremap <leader>f :FZF<CR>
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 xnoremap * :<C-u>call <SID>VSetSearch('/')<CR>/<C-R>=@/<CR><CR>
 xnoremap # :<C-u>call <SID>VSetSearch('?')<CR>?<C-R>=@/<CR><CR>
