@@ -28,3 +28,12 @@
 [submodule "pack/foo/start/vim-javascript"]
 	path = pack/foo/start/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
+[submodule "pack/foo/start/vim-go"]
+	path = pack/foo/start/vim-go
+	url = https://github.com/fatih/vim-go.git
+[submodule "pack/foo/start/editorconfig-vim"]
+	path = pack/foo/start/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "pack/foo/start/palenight"]
+	path = pack/foo/start/palenight
+	url = https://github.com/drewtempelmeyer/palenight.vim
