@@ -60,7 +60,7 @@ nnoremap <leader>p :w \| !prettier --write %<CR>
 nnoremap <leader>w <C-w>v<C-w>w
 nnoremap <leader>0 :q!<CR>
 nnoremap <leader>d :YcmCompleter GoTo<CR>
-nnoremap <leader>f :FZF<CR>
+nnoremap <leader>f :call fzf#run(fzf#wrap({'source': 'git ls-files --exclude-standard --others --cached'}))<CR>
 nnoremap <leader>n :w \| !npm run lint:fix<CR>
 nnoremap <leader>i :GoImplements<CR>
 nnoremap <leader>ev :vsplit $MYVIMRC<CR>
