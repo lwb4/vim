@@ -7,9 +7,6 @@
 [submodule "pack/foo/start/ale"]
 	path = pack/foo/start/ale
 	url = https://github.com/w0rp/ale.git
-[submodule "pack/foo/start/julia-vim"]
-	path = pack/foo/start/julia-vim
-	url = git://github.com/JuliaEditorSupport/julia-vim.git
 [submodule "pack/foo/start/commentary"]
 	path = pack/foo/start/commentary
 	url = https://tpope.io/vim/commentary.git
